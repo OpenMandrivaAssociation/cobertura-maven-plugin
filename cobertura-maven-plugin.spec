@@ -1,4 +1,14 @@
-%{?_javapackages_macros:%_javapackages_macros}
+
+%undefine _compress
+%undefine _extension
+%global _duplicate_files_terminate_build 0
+%global _files_listed_twice_terminate_build 0
+%global _unpackaged_files_terminate_build 0
+%global _nonzero_exit_pkgcheck_terminate_build 0
+%global _use_internal_dependency_generator 0
+%global __find_requires /bin/sed -e 's/.*//'
+%global __find_provides /bin/sed -e 's/.*//'
+
 Name:		cobertura-maven-plugin
 Version:	2.6
 Release:	1.fc20

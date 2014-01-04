@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           cobertura-maven-plugin
 Version:        2.6
 Release:        1.0%{?dist}
@@ -80,3 +80,61 @@ rm -Rf src/it/mcobertura-65
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE
+
+%changelog
+* Mon Sep 02 2013 Michal Srb <msrb@redhat.com> - 2.6-1
+- Update to upstream version 2.6
+- Enable tests
+- Drop group tag
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.2-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Mon Mar 25 2013 Michal Srb <msrb@redhat.com> - 2.5.2-3
+- Build with xmvn
+
+* Thu Feb 28 2013 Michal Srb <msrb@redhat.com> - 2.5.2-2
+- Missing R: jpackage-utils
+
+* Thu Feb 21 2013 Michal Srb - 2.5.2-1
+- Package rename (was maven-plugin-cobertura)
+- Update to upstream 2.5.2 version
+- Spec file clean up
+- Add license file
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 2.5.1-5
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Tue Aug 21 2012 Mikolaj Izdebski <mizdebsk@redhat.com> - 2.5.1-4
+- Don't own _mavenfragdir
+
+* Thu Jul 19 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild
+
+* Fri Jan 13 2012 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.5.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild
+
+* Fri Jun 17 2011 Alexander Kurtakov <akurtako@redhat.com> 2.5.1-1
+- Update to upstream 2.5.1 version.
+
+* Tue Feb 08 2011 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 2.4-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild
+
+* Fri Dec 17 2010 Alexander Kurtakov <akurtako@redhat.com> 2.4-1
+- Update to 2.4.
+- Adapt to current guidelines.
+
+* Thu Sep 10 2009 Alexander Kurtakov <akurtako@redhat.com> 2.3-3
+- Fix license and changelog.
+- Add comment for patch.
+
+* Thu Sep 10 2009 Alexander Kurtakov <akurtako@redhat.com> 2.3-2
+- Fix Summary.
+- Drop maven2-common-poms BR and add versioned BR to gnu-getopt
+
+* Mon Sep  7 2009 Milos Jakubicek <xjakub@fi.muni.cz> - 2.3-1
+- Initial release

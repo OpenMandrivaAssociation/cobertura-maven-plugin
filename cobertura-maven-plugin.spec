@@ -1,9 +1,9 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           cobertura-maven-plugin
 Version:        2.6
-Release:        1.1%{?dist}
+Release:        1.2
 Summary:        Plugin providing the features of Cobertura within Maven
-
+Group:		System/Libraries
 
 # the project is under ASL 2.0 license
 # javascript files in src/site/resources/sample-maven-shared-io-report/js/

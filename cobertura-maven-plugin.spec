@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           cobertura-maven-plugin
 Version:        2.6
-Release:        1.2
+Release:        1.3
 Summary:        Plugin providing the features of Cobertura within Maven
 Group:		System/Libraries
 

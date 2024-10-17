@@ -9,7 +9,7 @@ Group:		System/Libraries
 # javascript files in src/site/resources/sample-maven-shared-io-report/js/
 # are under GPLv2 and GPLv2+
 License:        ASL 2.0 and GPLv2 and GPLv2+
-URL:            http://mojo.codehaus.org/cobertura-maven-plugin/
+URL:            https://mojo.codehaus.org/cobertura-maven-plugin/
 Source0:        http://repo2.maven.org/maven2/org/codehaus/mojo/%{name}/%{version}/%{name}-%{version}-source-release.zip
 Source1:        http://www.apache.org/licenses/LICENSE-2.0.txt
 BuildArch:      noarch
